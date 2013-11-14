@@ -2,7 +2,7 @@ var request     = require('request');
 var cheerio     = require('cheerio');
 
 
-var ticker  = "LVS";
+var ticker  = process.arg[2];
 var yUrl    = "http://finance.yahoo.com/q/ks?s=" + ticker;
 var financeDetails = new Array();
 var keyStr = new Array();
