@@ -1,6 +1,6 @@
  me": "circle",
   "version": "0.0.1",
-  "description": "",
+  "description": "Yahoo scraper",
   "main": "index.js",
   "scripts": {
   },
@@ -10,7 +10,7 @@
     "server"
   ],
   "repository": {
-    "url": ",
+    "url": "git@github.com:ilteris/yahooFinance.git",
     "type": "git"
   },
   "author": "ilteris kaplan",
@@ -22,7 +22,7 @@
     "route-map": "0.0.0"
   },
   "devDependencies": {
-    "fox": "*",
+    "cheerio": "*",
     "request": "*",
     "get-json": "*"
   }
