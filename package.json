@@ -1,0 +1,29 @@
+ me": "circle",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+  },
+  "keywords": [
+    "json",
+    "api",
+    "server"
+  ],
+  "repository": {
+    "url": ",
+    "type": "git"
+  },
+  "author": "ilteris kaplan",
+  "license": "MIT",
+  "dependencies": {
+    "property": "0.0.0",
+    "local-debug": "0.0.0",
+    "post-data": "0.0.0",
+    "route-map": "0.0.0"
+  },
+  "devDependencies": {
+    "fox": "*",
+    "request": "*",
+    "get-json": "*"
+  }
+}
