@@ -3,7 +3,7 @@ var cheerio     = require('cheerio');
 
 
 var ticker  = process.argv[2];
-var yUrl    = "http://finance.yahoo.com/q/ks?s=" + ticker;
+var yUrl    = "http://finance.yahoo.com/q/op?s=" + ticker;
 var financeDetails = new Array();
 var keyStr = new Array();
 request(yUrl, function (error, response, body) {
@@ -17,7 +17,6 @@ request(yUrl, function (error, response, body) {
     });
  
     // the values
-    // TODO: normalize them 
     var tData = $('.yfnc_tabledata1');
     $(tData).each(function(j, val) {
       financeDetails[j] = $(val).text();
