@@ -1,9 +1,14 @@
 var request     = require('request');
 var cheerio     = require('cheerio');
-
-
 var ticker  = process.argv[2];
 var yUrl    = "http://finance.yahoo.com/q/op?s=" + ticker;
+//grab all the options symbols
+//and query them one by one in a queue
+//return the data
+//crond this every 10 minutes
+//save it in a db
+//
+
 var financeDetails = new Array();
 var keyStr = new Array();
 request(yUrl, function (error, response, body) {
